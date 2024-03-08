@@ -33,7 +33,21 @@ for (let i = 0; i <= 100; i++){
 
 // 2 here I create a div with class container that allow me to put the output inside of it after with append...
 // create container
-const container = document.createElement("div");
-container.id = "container";
+const container = document.getElementById("my-container");
 
-console.log(container);
+for (let i = 0; i <= 100; i++){
+    let output = document.createElement("p");
+
+    if(i % 3 === 0){
+        output += 'fizz';
+    }
+    if(i % 5 === 0){
+        output += 'buzz';
+    }
+    if(output === ''){
+        output = i;
+    }
+    container.appendChild(output);
+}
+
+// error
