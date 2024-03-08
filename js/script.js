@@ -14,7 +14,18 @@
 // Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 // Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
 
-// 1 Qui stampo in console i numeri da 1 a 100 facendo un ciclo for che fa da i = 0 a i < 100 con i++
+// 1 print the numbers between 1 to 100 with a cicle for ->from i = 0 to i < 100 with i++
 for (let i = 0; i <= 100; i++){
-    console.log(i);
+    let output = '';
+    
+    if(i % 3 === 0){
+        output += 'fizz';
+    }
+    if(i % 5 === 0){
+        output += 'buzz';
+    }
+    if(output === ''){
+        output = i;
+    }
+    console.log(output);
 }
