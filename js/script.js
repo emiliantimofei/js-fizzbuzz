@@ -14,10 +14,11 @@
 // Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 // Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
 
-// 1 print the numbers between 1 to 100 with a cicle for ->from i = 0 to i < 100 with i++
+// 1 print the numbers between 1 to 100 with a cicle for ->from i = 0 to i < 100 with i++ 3 buzz 5 fizz 3 & 5 fizz buzz...
+
 for (let i = 0; i <= 100; i++){
     let output = '';
-    
+
     if(i % 3 === 0){
         output += 'fizz';
     }
@@ -29,3 +30,10 @@ for (let i = 0; i <= 100; i++){
     }
     console.log(output);
 }
+
+// 2 here I create a div with class container that allow me to put the output inside of it after with append...
+// create container
+const container = document.createElement("div");
+container.id = "container";
+
+console.log(container);
