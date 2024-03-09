@@ -1,9 +1,17 @@
+body{
+    background-color: yellow;
+}
+h1{
+    background-color: orange;
+    text-align: center;
+}
 .square{
     width: 1000px;
     display: flex;
     flex-wrap: wrap;
     color: white;
     margin: 0 auto;
+    margin-top: 35px;
 }
 .in-common{
     width: 95px;
