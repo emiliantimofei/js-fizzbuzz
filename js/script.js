@@ -15,23 +15,32 @@
 // Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
 
 
-//bonus 1
+//bonus 2
 
 const container = document.getElementById("my-container");
-for (let i = 0; i <= 100; i++){
+for (let i = 1; i <= 100; i++){
     const box = document.createElement("div");
 
     let output = "";
-    if(i % 3 === 0){
-        output = 'fizz';
+    if(i % 3 === 0 && i % 5 === 0){
+        output = 'fizzbuzz'
+        box.classList.add('box-1');
+        box.classList.add('in-common');
     } else if(i % 5 === 0){
         output = 'buzz';
+        box.classList.add('box-2');
+        box.classList.add('in-common');
+    } else if(i % 3 === 0){
+        output = 'fizz';
+        box.classList.add('box-3');
+        box.classList.add('in-common');
     } else{
         output = i;
+        box.classList.add('box-4');
+        box.classList.add('in-common');
     }
 
     console.log(output);
-
 
     box.innerHTML = output;
     container.appendChild(box);
